@@ -19,8 +19,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { userSignUp, userLogin } from "../../features/auth/authSlice";
 function Form({ path }) {
-  const currentUser = useSelector((state) => state.auth.currentUser);
-  const isLogedin = useSelector((state) => state.auth.isLogedin);
+  const isUserCreated = useSelector((state) => state.auth.isUserCreated);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState();
@@ -68,7 +67,7 @@ function Form({ path }) {
     // setError(null);
     // setSuccess("Application was submitted!");
     if (location.pathname.substring(1) === "login" && path) {
-      if (currentUser && isLogedin) {
+      if (isUserCreated) {
         if (checkInputs) {
           dispatch(userLogin({ email, password }));
           setEmail("");

@@ -4,6 +4,7 @@ const initialState = {
   users: [],
   currentUser: {},
   isLogedin: false,
+  isUserCreated:false,
   message: "",
 };
 const authSlice = createSlice({
@@ -26,11 +27,14 @@ const authSlice = createSlice({
             confPassowrd: newUser.confPassowrd,
           });
           state.message = "account created";
+          state.isUserCreated=true;
         } else {
           state.message = "check your confirm passowrd";
+          state.isUserCreated=false;
         }
       } else {
         state.message = "you all ready have an account";
+        state.isUserCreated=true;
       }
     },
     //login user
