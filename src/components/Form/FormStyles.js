@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const FormSection = styled.div`
   /* color: #fff; */
   padding: 160px 0;
-  height: 100%;
+  min-height: 100vh;
   /* background: ${({ inverse }) => (inverse ? "#101522" : "#fff")}; */
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   background: linear-gradient(
