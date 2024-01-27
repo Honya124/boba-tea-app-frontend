@@ -15,18 +15,18 @@ export const Container = styled.div`
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px; // 0 50
+  padding: 0 50px;
 
   @media screen and (max-width: 960px) {
-    padding: 0 10px; //0 30
+    padding: 0 30px;
   }
 `;
 
 export const MainHeading = styled.h1`
   font-size: clamp(
-    2.5rem,
-    8vw,
-    4.7rem
+    2.3rem,
+    6vw,
+    4.5rem
   ); //xoi font'akai 6vw nayalet la 2.3 kamtr w la 4.5 ziatr bet
   margin-bottom: 2rem;
   color: ${({ inverse }) => (inverse ? "#e33a6d" : "#fff")};
@@ -118,7 +118,7 @@ export const Button = styled.button`
   background: none;
   white-space: nowrap;
   padding: 10px 20px;
-  font-size: 19px;
+  font-size: 16px;
   color: #fff;
   outline: none;
   border: 2px solid #fff;

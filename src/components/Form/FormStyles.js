@@ -26,18 +26,17 @@ export const FormContainer = styled.div`
 `;
 export const FormColumn = styled.div`
   /* margin-bottom: 15px; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 50px;
   background: #fff;
   border: 20px;
   //padding: ${({ small }) => (small ? "0 50px" : "0 15px")};
   flex: 1;
-  max-width: 80%;
+  max-width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 20px;
- 
+  flex-direction: column;
   @media screen and (max-width: 768px) {
     max-width: 100% !important;
     flex-basis: 100%;
@@ -74,8 +73,7 @@ export const FormMessage = styled(motion.div)`
 export const FormLinkWrapper = styled.div`
   padding: 5px;
   text-align: center;
-  margin-top: 1rem;
-  font-size: 1.2rem;
+  margin-top: 1.1rem;
 `;
 export const FormLink = styled(Link)`
   margin-left: 5px;
@@ -108,12 +106,12 @@ export const FormInput = styled.input`
   width: 100%;
   border: none;
   border-bottom: 1px solid #cfcfcf;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 `;
 
 export const FormLabel = styled.label`
   display: inline-block; // xoi inline boi bekain ba block abet inline-block halbzherin
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   margin-bottom: 0.3rem;
   color: #afafaf;
 `;
@@ -139,7 +137,7 @@ export const FormButton = styled.button`
   /* color: #fff; */
   outline: none;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding: 5px 15px;
   border: 2px solid #AE7175;
   border: 2px solid #AE7175;
