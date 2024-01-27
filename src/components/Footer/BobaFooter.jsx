@@ -6,6 +6,8 @@ import {
   FooterImgColumn,
   FooterLogo,
   SocialIcon,
+  FooterRights,
+  BobaText,
   FooterAddress,
   FooterCall,
   FooterEmail,
@@ -16,7 +18,7 @@ import {
 import { footerSocialData } from "../../data/FooterData";
 function BobaFooter() {
   return (
-    <Section padding="4rem 0 2rem 0" id="footerLogo" >
+    <Section padding="4rem 0 2rem 0" id="footerLogo">
       <FooterWrapper>
         <FooterGrid justify="space-between">
           <FooterColumn>
@@ -28,7 +30,7 @@ function BobaFooter() {
             </FooterAddress>
           </FooterColumn>
           <FooterImgColumn>
-            <FooterLogo>
+            <FooterLogo to="/">
               <SocialIcon src="./assets/bobaLogo.png" />
             </FooterLogo>
           </FooterImgColumn>
@@ -48,6 +50,7 @@ function BobaFooter() {
             </Row>
           </FooterColumn>
         </FooterGrid>
+        <FooterRights>Boba Tea © {new Date().getFullYear()} <BobaText>Created By Honya124 | All Rights Reserved. </BobaText> </FooterRights>
       </FooterWrapper>
     </Section>
   );

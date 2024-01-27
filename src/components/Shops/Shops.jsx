@@ -15,6 +15,7 @@ import {
   ShopsPaginateWrapper,
 } from "./ShopsStyles";
 import { ShopsIcons } from "../../data/BobaFlavors";
+import BobaFooter from "../Footer/BobaFooter";
 
 function Shops() {
   const getShopsData = useSelector(selectAllShops);
@@ -113,6 +114,7 @@ function Shops() {
       </ShopsPaginateWrapper>
 
       <ShopItems data={currentItems} />
+      <BobaFooter />
     </ShopsSection>
   );
 }

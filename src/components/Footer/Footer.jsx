@@ -21,7 +21,7 @@ function Footer() {
       <FooterWrapper>
         <FooterGrid justify="space-between">
           <FooterColumn id="footerLogo">
-            <FooterLogo>
+            <FooterLogo to="/">
               <SocialIcon src="./assets/bobaLogo.png" />
             </FooterLogo>
 

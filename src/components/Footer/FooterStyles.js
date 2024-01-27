@@ -7,7 +7,7 @@ export const FooterContainer = styled.div`
   padding: 4rem 0 2rem 0;
 `;
 export const FooterWrapper = styled.div`
- // max-width: 1280px;
+  // max-width: 1280px;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -58,11 +58,10 @@ export const FooterGrid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: center;
   align-items: center;
-
 `;
 
 export const FooterImgColumn = styled(Column)`
-align-items: center;
+  align-items: center;
   @media screen and (max-width: 999px) {
     align-items: center;
     grid-column: 1/-1; //span full wata hamw column'aka bgretawa
@@ -125,10 +124,9 @@ export const FooterLogo = styled(Link)`
   font-size: 2rem;
   display: flex;
   align-items: center;
-  
 
   margin-bottom: 70px;
-  @media screen and (max-width:1000px) {
+  @media screen and (max-width: 1000px) {
     margin: 0;
   }
   //margin-bottom: 8px;
@@ -138,18 +136,22 @@ export const SocialIcon = styled.img`
   //margin-right: 10px;
   //width: 80px;
   width: 155px;
-
 `;
 export const FooterRights = styled.div`
   color: #fff;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   width: 100%;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   text-align: center;
-  border: 1px solid #2d3748;
+  border: 1px solid #fff;
   padding: 1rem 0;
-  margin: 1rem 0 0;
+  margin: 1rem 0 16px;
+
 `;
+export const BobaText=styled.div`
+font-size: 1rem;
+padding: 2px 0;
+`
 export const FooterSocialIcon = styled.a`
   color: #fff;
   font-size: 26px;
@@ -163,7 +165,7 @@ export const FooterTime = styled.div`
   font-size: 1.2rem;
   line-height: 2;
   text-align: center;
-  
+
   @media screen and (max-width: 1000px) {
     margin-left: 0;
     text-align: left;
@@ -178,7 +180,7 @@ export const FooterCall = styled.div`
   font-size: 1.2rem;
   line-height: 2;
   text-align: center;
-  
+
   @media screen and (max-width: 1000px) {
     margin-left: 0;
     text-align: left;
