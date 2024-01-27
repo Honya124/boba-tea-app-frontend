@@ -7,7 +7,7 @@ export const ShopItemsTextWrapper = styled.div`
 `;
 export const ShopItemTitle = styled.h2`
   text-align: center;
-  font-size: clamp(1.3rem, 13vw, 3.1rem);
+  font-size: clamp(1.5rem, 15vw, 3.3rem);
   //color: #9c1d3b;
   color: #AE7175;
   letter-spacing: 0.2rem;
@@ -16,7 +16,7 @@ export const ShopItemTitle = styled.h2`
 `;
 export const ShopItemsWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
   margin-top: 4rem;
 `;
@@ -34,7 +34,7 @@ export const ShopItemsColumn = styled.div`
 
 export const ShopItemsIconWrapper = styled.div`
   margin-left: auto;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 
   &:hover {
     .activeDesc {
@@ -45,7 +45,7 @@ export const ShopItemsIconWrapper = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 `;
 export const ShopItemsDescriptionWrapper = styled.div`
@@ -63,15 +63,15 @@ export const ShopItemsDescriptionWrapper = styled.div`
 `;
 
 export const ShopItemsIngredients = styled.p`
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.3;
   letter-spacing: 0.01rem;
   width: 100%;
-  font-size: 50;
+  /* font-size: 50; */
 `;
 
 export const ShopItemsImageWrapper = styled.div`
-  width: 150px;
+  width: 155px;
   margin-bottom: 0.5rem;
   border: 1px solid #AE7175;
   border-radius: 50%;
@@ -79,7 +79,7 @@ export const ShopItemsImageWrapper = styled.div`
 `;
 export const Img = styled.img`
   width: 100%;
-  height: 150px;
+  height: 155px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
@@ -89,8 +89,9 @@ export const Img = styled.img`
 export const ShopItemPrice = styled.p`
   margin-right: auto;
   letter-spacing: 1px;
+  font-size: 1.1rem;
   @media screen and (max-width: 768px) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 `;
 
@@ -103,14 +104,14 @@ export const ShopItemsRow = styled.div`
 `;
 export const ShopItemsName = styled.h3`
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   letter-spacing: 1.3px;
   color: #AE7175;
   text-transform: capitalize;
   flex-wrap: wrap;
 
   @media screen and (max-width: 768px) {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 `;
 export const ShopItemsButton = styled.button`
@@ -120,14 +121,14 @@ export const ShopItemsButton = styled.button`
   margin-right: auto;
   background: #B77076;
   color: #fff;
-  padding: 10px 20px;
+  padding: 12px 22px;
   outline: none;
   overflow: hidden;
   text-align: center;
   border: 2px solid #AE7175;
   white-space: nowrap;
   border-radius: 4px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-transform: capitalize;
   line-height: 20px;
   font-weight: 600;
@@ -162,8 +163,8 @@ export const ShopItemsButton = styled.button`
 `;
 export const ShopItemsButtonCard = styled.button`
   background: #AE7175;
-  min-width: 40px;
-  min-height: 28px;
+  min-width: 42px;
+  min-height: 30px;
   border-radius: 0.2rem;
   text-align: center;
   white-space: nowrap;
@@ -171,7 +172,7 @@ export const ShopItemsButtonCard = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 
   &:hover{
     color: #fff;

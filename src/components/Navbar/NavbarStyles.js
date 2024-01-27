@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   position: absolute;
   top: 0;
   z-index: 50;
@@ -39,10 +39,10 @@ export const NavLogo = styled(Link)`
 `;
 export const NavIcon = styled.img`
   /* margin-right: 1rem; */
-  width: 15rem;
+  width: 17rem;
 
   @media screen and (max-width: 760px) {
-    width: 9rem;
+    width: 11rem;
     transition: width 0.2s ease;
   }
 `;
@@ -57,7 +57,7 @@ export const MobileIcon = styled.div`
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    font-size: 2rem;
     cursor: pointer;
   }
 `;
@@ -144,7 +144,7 @@ export const NavLinksSHop = styled(motion.span)`
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding: 1rem 1rem;
   margin: ${({ shop }) => (shop ? "0 1rem" : "")};
   display: table;

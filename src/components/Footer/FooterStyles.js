@@ -137,7 +137,7 @@ export const FooterLogo = styled(Link)`
 export const SocialIcon = styled.img`
   //margin-right: 10px;
   //width: 80px;
-  width: 140px;
+  width: 155px;
 
 `;
 export const FooterRights = styled.div`
@@ -152,7 +152,7 @@ export const FooterRights = styled.div`
 `;
 export const FooterSocialIcon = styled.a`
   color: #fff;
-  font-size: 24px;
+  font-size: 26px;
 `;
 
 export const FooterTime = styled.div`
@@ -160,7 +160,7 @@ export const FooterTime = styled.div`
   margin: 0.4rem auto 0.4rem;
   max-width: 20rem;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 2;
   text-align: center;
   
@@ -175,7 +175,7 @@ export const FooterCall = styled.div`
   margin: 0.4rem auto 0.4rem;
   max-width: 20rem;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 2;
   text-align: center;
   
@@ -190,7 +190,7 @@ export const FooterEmail = styled.div`
   margin: 0.4rem auto 0.4rem;
   max-width: 20rem;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 2;
   text-align: center;
 
@@ -205,7 +205,7 @@ export const FooterAddress = styled.div`
   margin: 0.4rem auto 0.4rem;
   max-width: 20rem;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 2;
   text-align: center;
 

@@ -5,7 +5,7 @@ export const HeroSection = styled.section`
   height: 100vh;
   background-position: center;
   background-size: cover;
-  padding-top: clamp(70px, 25vh, 220px);
+  padding-top: clamp(72px, 27vh, 222px);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); // aw inset wata shadow bo bka bo nawawa nak darawa
 `;
 
@@ -15,7 +15,7 @@ export const HeroBackgroundColor = styled.div`
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: -2;
 `;
 export const HeroVideo = styled.video`
@@ -36,7 +36,7 @@ export const HeroVideo = styled.video`
 
 export const HeroText = styled.p`
   margin-bottom: 35px;
-  font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+  font-size: clamp(1.1rem, 1.7vw, 1.5rem);
   line-height: 24px;
   text-align: center;
   letter-spacing: 2px;

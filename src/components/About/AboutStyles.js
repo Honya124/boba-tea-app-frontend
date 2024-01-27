@@ -22,9 +22,9 @@ export const AboutVideo = styled.video`
 `;
 export const AboutMainHeading = styled(motion.h1)`
   font-size: clamp(
-    2.3rem,
-    6vw,
-    4.5rem
+    2.5rem,
+    8vw,
+    4.7rem
   ); //xoi font'akai 6vw nayalet la 2.3 kamtr w la 4.5 ziatr bet
   margin-bottom: 2rem;
   color: ${({ inverse }) => (inverse ? "#AE7175" : "#fff")};
@@ -33,7 +33,7 @@ export const AboutMainHeading = styled(motion.h1)`
   text-align: center;
 `;
 export const AboutText = styled(motion.p)`
-  font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+  font-size: clamp(1.1rem, 1.7vw, 1.5rem);
   line-height: 24px;
   text-align: center;
   letter-spacing: 2px;

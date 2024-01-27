@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Column } from "../../globalStyles";
 
 export const ShopCardSection = styled.div`
-  width: 400px;
+  width: 600px; //400
   height: 100vh;
   /* background: #fff; */
   background: #ae7175;
@@ -46,11 +46,11 @@ export const ShopCardItem = styled.li`
   margin-right: 1rem;
 `;
 export const ImgItem = styled.div`
-  width: 20%;
+  width: 30%;
 `;
 export const Img = styled.img`
   width: 100%;
-  height: 70px;
+  height: 80px;
   object-fit: cover;
   border-radius: 0.4rem;
 `;
@@ -58,9 +58,9 @@ export const ShopCardTitle = styled.span`
   margin: 0.6rem 0 0 1rem;
   text-align: start;
   align-self: flex-start;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 24px;
-  font-size: 600;
+  /* font-weight: 600; */
   color: #fff;
 `;
 
@@ -87,27 +87,28 @@ export const ShopCardTextWrapper = styled.div`
 `;
 export const ShopCardPrice = styled.span`
   color: #fff;
-  font-size: 14px;
+  font-size: 17px;
   letter-spacing: 1px;
   text-align: end;
   margin-bottom: 9px;
 `;
 export const ShopCardText = styled.span`
-  font-size: 14px;
+  font-size: 17px;
   // color: #d1d5db;
   color: #ffcbc3;
   letter-spacing: 1px;
   line-height: 24px;
 `;
 export const ShopCardSubtotal = styled.span`
-  font-size: 14px;
+  font-size: 17px;
   letter-spacing: 1px;
 `;
 export const ShopCardShippingFee = styled.span`
-  font-size: 14px;
+  font-size: 17px;
   letter-spacing: 1px;
 `;
 export const ShopCardTotal = styled.span`
+font-size: 1.6rem;
   letter-spacing: 1px;
 `;
 
@@ -117,14 +118,14 @@ export const ShopCardButtonWrapper = styled.div`
   border-radius: 0.5rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   background: #fff;
-  width: 65px;
+  width: 70px;
 `;
 export const ShopCartButton = styled.button`
   color: #adaaa5;
   outline: none;
   width: auto;
   height: 100%;
-  font-size: 1rem;
+  font-size: 1.3rem;
   white-space: nowrap;
   overflow: hidden;
   /* padding: 3px 6px 4px 6px; */
@@ -153,5 +154,5 @@ export const ShopCartButton = styled.button`
 export const ShopCartCount = styled.span`
   text-align: center;
   padding: 0 7px;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 `;

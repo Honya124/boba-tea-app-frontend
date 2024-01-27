@@ -33,7 +33,7 @@ export const ContentColumn = styled(motion.div)`
   }
 `;
 export const TextWrapper = styled.div`
-  max-width: 540px;
+  max-width: 570px; //540
   padding-top: 0;
 
   @media screen and (max-width: 768px) {
@@ -55,12 +55,12 @@ export const TextWrapper = styled.div`
 export const ImgWrapper = styled(motion.div)`
   display: flex;
   justify-content: "flex-end"; // aw item'anai flex'n ayan bata end
-  max-height: 700px;
+  max-height: 800px; //700
   justify-content: center; // item'akan abata center without flex
   position: relative;
 `;
 export const TopLine = styled(motion.div)`
-  font-size: 0.9rem;
+  font-size: 1%.1;
   line-height: 16px;
   font-weight: 550;
   letter-spacing: 1.4px;
@@ -75,13 +75,13 @@ export const Img = styled(motion.img)`
   vertical-align: middle; // set vertical element ka inline or inline-block or table'n
   display: inline-block;
   object-fit: cover;
-  max-height:500px;
+  max-height:600px;
   border-radius:1rem ;
   z-index: 1;
 `;
 export const Heading = styled(motion.h2)`
   margin-bottom: 24px;
-  font-size: 3rem;
+  font-size: 3.2rem;
   line-height: 1.1;
   font-weight: 600;
   color: ${({ inverse }) => (inverse ? "#AE7175" : "#fff")};
@@ -92,7 +92,7 @@ export const Heading = styled(motion.h2)`
 `;
 
 export const Subtitle = styled(motion.p)`
-  max-width: 440px;
+  max-width: 450px;
   margin-bottom: 35px;
   line-height: 24px;
   color: ${({ inverse }) => (inverse ? "#000" : "#fff")};
@@ -103,7 +103,7 @@ export const ContentButton = styled(motion.button)`
   height: 3rem;
   padding: 16px 32px;
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 18px;
   letter-spacing: 1.54px;
   text-transform: uppercase;

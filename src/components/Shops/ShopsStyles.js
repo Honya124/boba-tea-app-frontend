@@ -14,7 +14,7 @@ export const ShopsTextWrapper = styled.div`
 `;
 export const ShopsTitle = styled.h2`
   text-align: center;
-  font-size: clamp(1.3rem, 13vw, 3.1rem);
+  font-size: clamp(1.5rem, 15vw, 3.3rem);
   color: #AE7175;
   letter-spacing: 0.2rem;
   line-height: 1.06;
@@ -55,7 +55,7 @@ export const ShopsColumn = styled.button`
 export const ShopsIconText = styled.p`
   text-transform: uppercase;
   //color: #AE7175;
-  font-size: clamp(0.7rem, 1.3vw, 1.2rem);
+  font-size: clamp(0.8rem, 1.4vw, 1.3rem);
 `;
 export const ShopIconWrapper = styled.div``;
 
@@ -69,7 +69,7 @@ export const ShopsPaginateWrapper = styled.div`
     justify-content: center;
     align-items: center;
     margin-bottom: 5rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     gap: 5px;
   }
 

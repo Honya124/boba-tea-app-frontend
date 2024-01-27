@@ -32,9 +32,7 @@ function Form({ path }) {
 
   const handleSignupSubmit = (e) => {
     e.preventDefault();
-    const checkInputs = [name, email, password, confirmPass].every(
-      (checkInput) => checkInput !== null || checkInput !== ""
-    );
+    const checkInputs = [name, email, password, confirmPass].every(Boolean);
     if (location.pathname.substring(1) === "signup") {
       if (checkInputs) {
         dispatch(
@@ -52,9 +50,7 @@ function Form({ path }) {
   };
   const handleLoginSubmit = (e) => {
     e.preventDefault();
-    const checkInputs = [name, email].every(
-      (checkInput) => checkInput !== null || checkInput !== ""
-    );
+    const checkInputs = [email, password].every(Boolean);
     // const resultError = validateForm({ name, email, password, confirmPass });
     // if (resultError !== null) {
     //   setError(resultError);
@@ -67,17 +63,17 @@ function Form({ path }) {
     // setError(null);
     // setSuccess("Application was submitted!");
     if (location.pathname.substring(1) === "login" && path) {
-      if (isUserCreated) {
-        if (checkInputs) {
+      if (checkInputs) {
+        if (isUserCreated) {
           dispatch(userLogin({ email, password }));
           setEmail("");
           setPassword("");
           navigate("/");
         } else {
-          toast.error("please, fill input data");
+          toast.error("please, create account before login");
         }
       } else {
-        toast.error("please, create account before login");
+        toast.error("please, fill input data");
       }
     }
   };

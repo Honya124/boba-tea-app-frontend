@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import toast, { Toaster } from "react-hot-toast";
 import { Container, Section } from "../../globalStyles";
 import {
   ContentRow,
@@ -16,7 +15,6 @@ import { useInView } from "react-intersection-observer"; //amma controlli scroll
 // scroll'y page ziatr la jarek twshi triggrt abet
 import { useAnimation } from "framer-motion"; //amma bo animationi content basha
 import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
 function Content({
   primary,
   topLine,
@@ -28,9 +26,7 @@ function Content({
   inverse,
   reverse,
 }) {
-  const currentUser = useSelector((state) => state.auth.currentUser);
-  const isLogedin = useSelector((state) => state.auth.isLogedin);
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   const initial = { opacity: 0, y: 30 }; // shweni dastpekrdni animation
   const animation = useAnimation();
   const { ref, inView } = useInView({ threshold: 0.2 }); // ref:bo har component animation'i ayayne, inView:notify'man akat ke animation akat
@@ -78,10 +74,7 @@ function Content({
                 inverse={inverse}
                 primary={primary}
                 onClick={() => {
-                  if (isLogedin && currentUser) {
-                    navigate("/shops");
-                  }
-                  toast.error("please, login")
+                  navigate("/shops");
                 }}
               >
                 {buttonLabel}
@@ -104,7 +97,6 @@ function Content({
             </ImgWrapper>
           </ContentColumn>
         </ContentRow>
-        <Toaster position="top-center" reverseOrder={true} />
       </Container>
     </Section>
   );

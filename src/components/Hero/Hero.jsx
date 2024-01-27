@@ -1,5 +1,4 @@
 import React from "react";
-import toast, { Toaster } from "react-hot-toast";
 import { useNavigate, Link } from "react-router-dom";
 import { Button, Container, MainHeading } from "../../globalStyles";
 import {
@@ -10,11 +9,8 @@ import {
   HeroButton,
   HeroBackgroundColor,
 } from "./HeroStyles";
-import { useSelector } from "react-redux";
 
 function Hero() {
-  const currentUser = useSelector((state) => state.auth.currentUser);
-  const isLogedin = useSelector((state) => state.auth.isLogedin);
   const navigate = useNavigate();
 
   return (
@@ -32,16 +28,12 @@ function Hero() {
           </Link>
           <HeroButton
             onClick={() => {
-              if (isLogedin && currentUser) {
-                navigate("/shops");
-              }
-              toast.error("please, login");
+              navigate("/shops");
             }}
           >
             Find More
           </HeroButton>
         </ButtonWrapper>
-        <Toaster position="top-center" reverseOrder={true} />
       </Container>
       <HeroBackgroundColor />
     </HeroSection>
