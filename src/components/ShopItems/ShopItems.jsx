@@ -20,12 +20,12 @@ import {
 } from "./ShopItemsStyles";
 // import { shopItemsData } from "../../data/ShopItemsData";
 import { IoIosInformationCircleOutline } from "react-icons/io";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { addItemToCart } from "../../features/shops/shopsSlice";
 
 function ShopItems({ data }) {
-  const currentUser = useSelector((state) => state.auth.currentUser);
-  const isLogedin = useSelector((state) => state.auth.isLogedin);
+  //const currentUser = useSelector((state) => state.auth.currentUser);
+  //const isLogedin = useSelector((state) => state.auth.isLogedin);
   const location = useLocation();
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -87,9 +87,9 @@ function ShopItems({ data }) {
           {location.pathname.substring(1) !== "shops" && (
             <ShopItemsButton
               onClick={() => {
-                if (isLogedin && currentUser) {
+               // if (isLogedin && currentUser) {
                   navigate("/shops");
-                }
+               // }
               }}
             >
               Find More
